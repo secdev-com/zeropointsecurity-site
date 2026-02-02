@@ -1,7 +1,6 @@
 baseURL = "https://zeropointsecurity.com/"
 languageCode = "en-us"
 title = ".Zeropoint Security | Security Diagnostics"
-theme = ""
 
 [params]
   tagline = "Security isn't inevitable. It's intentional."
