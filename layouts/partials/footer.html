@@ -1,0 +1,52 @@
+<footer>
+    <div class="footer-container">
+        <div class="footer-brand">
+            <a href="/" class="logo">
+                <span class="logo-dot">.</span>Zeropoint Security
+            </a>
+            <p>{{ .Site.Params.tagline }} We help organizations build resilience against evolving cyber threats through intelligence-driven strategies.</p>
+            <div class="social-links">
+                <a href="{{ .Site.Params.linkedin }}" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h4>Services</h4>
+            <ul>
+                <li><a href="/#services">Risk Assessments</a></li>
+                <li><a href="/#services">Technical Consulting</a></li>
+                <li><a href="/#services">Cyber Simulations</a></li>
+                <li><a href="/#services">MSP Services</a></li>
+                <li><a href="/#services">Custom Solutions</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="/about/">About Us</a></li>
+                <li><a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener">Careers</a></li>
+                <li><a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener">News</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+        </div>
+        <!-- Resources section commented out
+        <div class="footer-column">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">Case Studies</a></li>
+                <li><a href="#">Whitepapers</a></li>
+            </ul>
+        </div>
+        -->
+    </div>
+    <div class="footer-bottom">
+        <div class="canadian-badge" style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; margin-bottom: 1rem;">
+            <svg width="24" height="24" viewBox="0 0 512 512" fill="#c45c5c">
+                <path d="M383.8 351.7c2.5-2.5 105.2-92.4 105.2-92.4l-17.5-7.5c-10-4.9-7.4-11.5-5-17.4 2.4-7.6 20.1-67.3 20.1-67.3s-47.7 10-57.7 12.5c-7.5 2.4-10-2.5-12.5-7.5s-15-32.4-15-32.4-52.6 59.9-55.1 62.3c-10 7.5-20.1 0-17.6-10 0-10 27.5-107.5 27.5-107.5-15.5-.1-44 40-67.6 40.1-24.6.1-53.2-40.1-68.7-40.1 0 0 27.5 97.5 27.5 107.5 2.4 10-7.5 17.5-17.5 10-2.5-2.5-55.1-62.3-55.1-62.3S167.1 170 164.6 175s-5 9.9-12.5 7.5C142 180 94.4 170 94.4 170s17.6 59.7 20.1 67.3c2.4 6 5 12.5-5 17.4L92 262.4s102.6 89.9 105.2 92.4c5.1 5 10 7.5 5.1 22.5-5.1 15-10.1 35.1-10.1 35.1s69.8-23.4 74.9-23.4c5 0 69.8 23.4 74.9 23.4 0 0-5.1-20.1-10-35.1-5.1-15 0-17.5 5-22.5z"/>
+            </svg>
+            <span style="font-size: 0.85rem; letter-spacing: 1px; color: rgba(255,255,255,0.7);">Proudly Canadian Company</span>
+        </div>
+        <p>&copy; {{ now.Year }} .Zeropoint Security. All rights reserved.</p>
+    </div>
+</footer>

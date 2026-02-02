@@ -1,0 +1,32 @@
+baseURL = "https://zeropointsecurity.com/"
+languageCode = "en-us"
+title = ".Zeropoint Security | Security Diagnostics"
+theme = ""
+
+[params]
+  tagline = "Security isn't inevitable. It's intentional."
+  description = "We help organizations understand, anticipate, and mitigate cyber threats through intelligence-driven strategies, comprehensive risk management, and tailored security solutions."
+  email = "contact@zeropointsecurity.com"
+  linkedin = "https://www.linkedin.com/company/zeropointsecurity"
+
+[menu]
+  [[menu.main]]
+    name = "Services"
+    url = "/#services"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "Careers"
+    url = "/careers/"
+    weight = 3
+  [[menu.main]]
+    name = "News"
+    url = "https://www.linkedin.com/company/zeropointsecurity"
+    weight = 4
+  [[menu.main]]
+    name = "Contact"
+    url = "/#contact"
+    weight = 5

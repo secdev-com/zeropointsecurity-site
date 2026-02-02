@@ -1,0 +1,16 @@
+<nav id="navbar">
+    <a href="/" class="logo">
+        <span class="logo-dot">.</span>Zeropoint Security
+    </a>
+    <ul class="nav-links">
+        {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+    </ul>
+    <a href="/#contact" class="nav-cta">Get Started</a>
+    <div class="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
