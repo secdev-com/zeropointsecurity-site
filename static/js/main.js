@@ -80,23 +80,6 @@ document.querySelectorAll('.animate-on-scroll').forEach(el => {
     observer.observe(el);
 });
 
-// Form submission handler
-function handleSubmit(e) {
-    e.preventDefault();
-    const btn = e.target.querySelector('.submit-btn');
-    const originalText = btn.textContent;
-    btn.textContent = 'Message Sent!';
-    btn.style.background = 'var(--red)';
-    btn.style.color = '#fff';
-
-    setTimeout(() => {
-        btn.textContent = originalText;
-        btn.style.background = '';
-        btn.style.color = '';
-        e.target.reset();
-    }, 3000);
-}
-
 // Add staggered animation to service cards
 document.querySelectorAll('.service-card').forEach((card, index) => {
     card.style.transitionDelay = `${index * 0.1}s`;
