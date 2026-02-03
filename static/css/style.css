@@ -123,6 +123,10 @@ nav.scrolled {
     gap: 5px;
     cursor: pointer;
     padding: 10px;
+    background: transparent;
+    border: 0;
+    margin: 0;
+    appearance: none;
 }
 
 .mobile-menu-btn span {
@@ -130,6 +134,18 @@ nav.scrolled {
     height: 2px;
     background: var(--white);
     transition: all 0.3s ease;
+}
+
+.mobile-menu-btn.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.mobile-menu-btn.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-btn.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
 }
 
 /* Hero Section */
@@ -1239,8 +1255,38 @@ footer {
         display: none;
     }
 
+    .nav-cta {
+        display: none;
+    }
+
     .mobile-menu-btn {
         display: flex;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav.nav-open {
+        background: rgba(0,0,0,0.98);
+        backdrop-filter: blur(10px);
+    }
+
+    nav.nav-open .nav-links {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem 0 0.5rem;
+        order: 3;
+    }
+
+    nav.nav-open .nav-cta {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin: 0.5rem 0 1.5rem;
+        order: 4;
     }
 
     .services-grid {
