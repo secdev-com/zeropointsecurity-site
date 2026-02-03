@@ -1260,6 +1260,20 @@ footer {
         grid-template-columns: 1fr;
         gap: 40px;
     }
+
+    .hero {
+        padding: 100px 6% 60px;
+    }
+
+    .hero-title {
+        font-size: clamp(2.6rem, 12vw, 4rem);
+        letter-spacing: 0.08em;
+    }
+
+    .hero-title::before {
+        left: 0;
+        right: 0;
+    }
 }
 
 /* Animations on scroll */
