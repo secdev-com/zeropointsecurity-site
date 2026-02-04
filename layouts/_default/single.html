@@ -6,7 +6,7 @@
     {{ end }}
 </section>
 
-<section class="page-content">
+<section class="page-content{{ if and .File (eq .File.Path "about.md") }} about-page{{ end }}">
     <div class="container">
         {{ .Content }}
     </div>

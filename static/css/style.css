@@ -800,6 +800,20 @@ nav.scrolled {
     margin-bottom: 1.5rem;
 }
 
+.about-section {
+    padding: 2.5rem 0;
+    border-top: 1px solid rgba(255,255,255,0.12);
+}
+
+.about-section:first-child {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.about-section h2 {
+    margin-bottom: 1rem;
+}
+
 .about-stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1228,6 +1242,18 @@ footer {
     font-size: 1.1rem;
     line-height: 1.9;
     margin-bottom: 1.5rem;
+}
+
+.about-page h2 {
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid rgba(255,255,255,0.12);
+}
+
+.about-page h2:first-of-type {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
 }
 
 .placeholder-message {
