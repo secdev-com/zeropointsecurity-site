@@ -4,3 +4,14 @@
 <meta name="description" content="{{ .Site.Params.description }}">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css">
+<script>
+function initFreshdesk() {
+  window.fdWidget.init({
+    token: "01KGQ91AM6N8X1C9617J6SB29T",
+    host: "https://zeropointsecurity.freshdesk.com",
+    widgetId: "01KGQ91CBGC2FYW9X83DTEKTQB"
+  });
+}
+
+function initialize(i,t){var e;i.getElementById(t)?initFreshdesk():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://zeropointsecurity.freshdesk.com/webchat/js/widget.js",e.onload=initFreshdesk,i.head.appendChild(e))}function initiateCall(){initialize(document,"Freshdesk-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+</script>

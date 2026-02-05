@@ -4,7 +4,7 @@
     <div class="hero-bg"></div>
     <div class="hero-content">
         <p class="hero-tagline-top">Security Diagnostics</p>
-        <h1 class="hero-title"><span class="dot">.</span>ZEROPOINT</h1>
+        <h1 class="hero-title">ZEROPOINT</h1>
         <p class="hero-subtitle">Threat Intelligence Applied</p>
         <p class="hero-tagline">Security isn't inevitable. <em>It's intentional.</em></p>
     </div>
@@ -165,41 +165,20 @@
             <h2><span class="dot">.</span>Let's discuss your security challenges</h2>
             <p>Whether you're facing an immediate threat or planning for long-term resilience, our team is ready to help. Reach out to start the conversation.</p>
         </div>
-        <form class="contact-form animate-on-scroll" action="https://formspree.io/f/meezbdgl" method="POST">
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName" required>
-                </div>
-                <div class="form-group">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" name="lastName" required>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="company">Company</label>
-                <input type="text" id="company" name="company">
-            </div>
-            <div class="form-group">
-                <label for="service">Service Interest</label>
-                <select id="service" name="service">
-                    <option value="">Select a service...</option>
-                    <option value="risk-management">Risk Management</option>
-                    <option value="managed-services">Managed Services</option>
-                    <option value="technical-solutions">Custom Technical Solutions</option>
-                    <option value="other">Other / General Inquiry</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Tell us about your security challenges..."></textarea>
-            </div>
-            <button type="submit" class="submit-btn">Send Message</button>
-        </form>
+        <div class="contact-form animate-on-scroll">
+            <button type="button" class="submit-btn freshdesk-contact-btn">Contact Us</button>
+        </div>
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var btn = document.querySelector(".freshdesk-contact-btn");
+          if (!btn) return;
+          btn.addEventListener("click", function () {
+            if (window.fdWidget && typeof window.fdWidget.open === "function") {
+              window.fdWidget.open();
+            }
+          });
+        });
+        </script>
     </div>
 </section>
 {{ end }}
