@@ -1266,6 +1266,15 @@ footer {
     border-top: 0;
 }
 
+.about-page ul {
+    padding-left: 2.5rem;
+    margin-left: 0.75rem;
+}
+
+.about-page li {
+    margin-bottom: 0.6rem;
+}
+
 .placeholder-message {
     text-align: center;
     padding: 60px 20px;
