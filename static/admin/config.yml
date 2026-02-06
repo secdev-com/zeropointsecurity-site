@@ -2,7 +2,7 @@ backend:
   name: github
   branch: main
   repo: "secdev-com/zeropointsecurity-site"           # <-- This should identify the repo for your website
-  base_url: https://cms-auth.zeropointsecurity.ca    # <-- This should contain your PROXY URL
+  base_url: https://cms-auth.zeropointsecurity.com    # <-- This should contain your PROXY URL
   auth_endpoint: /auth
 
 media_folder: "static/uploads"
